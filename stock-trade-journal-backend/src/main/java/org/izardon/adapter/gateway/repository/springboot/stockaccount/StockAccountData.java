@@ -1,9 +1,9 @@
 package org.izardon.adapter.gateway.repository.springboot.stockaccount;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.izardon.adapter.gateway.repository.springboot.stockinfo.StockInfoData;
+
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name="stock_account")

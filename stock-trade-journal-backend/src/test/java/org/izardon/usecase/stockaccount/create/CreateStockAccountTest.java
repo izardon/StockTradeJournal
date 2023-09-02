@@ -1,7 +1,8 @@
-package org.izardon.usecase.stockaccount;
+package org.izardon.usecase.stockaccount.create;
 
 import org.izardon.adapter.stockaccount.StockAccountRepositoryInMemoryImpl;
 import org.izardon.usecase.JpaApplicationTest;
+import org.izardon.usecase.stockaccount.StockAccountRepository;
 import org.izardon.usecase.stockaccount.create.CreateStockAccountInput;
 import org.izardon.usecase.stockaccount.create.CreateStockAccountOutput;
 import org.izardon.usecase.stockaccount.create.CreateStockAccountUseCase;
