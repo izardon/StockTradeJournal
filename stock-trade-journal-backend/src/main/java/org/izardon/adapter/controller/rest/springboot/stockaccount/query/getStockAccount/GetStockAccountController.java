@@ -1,19 +1,16 @@
 package org.izardon.adapter.controller.rest.springboot.stockaccount.query.getStockAccount;
 
 import org.izardon.adapter.presenter.board.getcontent.StockAccountListViewModel;
-import org.izardon.entity.model.stockaccount.StockAccount;
 import org.izardon.usecase.stockaccount.StockAccountDto;
 import org.izardon.usecase.stockaccount.StockAccountDtoMapper;
-import org.izardon.usecase.stockaccount.query.getStockAccount.GetStockAccountListOutput;
-import org.izardon.usecase.stockaccount.query.getStockAccount.GetStockAccountListUseCase;
+import org.izardon.usecase.stockaccount.query.getstockaccount.GetStockAccountListOutput;
+import org.izardon.usecase.stockaccount.query.getstockaccount.GetStockAccountListUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @CrossOrigin(origins = "${CORS_URLS}")

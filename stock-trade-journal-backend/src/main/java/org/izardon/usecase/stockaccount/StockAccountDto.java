@@ -8,4 +8,12 @@ public class StockAccountDto {
         this.stockAccountId = stockAccountId;
         this.name = name;
     }
+
+    public String getStockAccountId() {
+        return stockAccountId;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

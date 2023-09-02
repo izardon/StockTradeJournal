@@ -1,4 +1,4 @@
-package org.izardon.usecase.stockaccount.query.getStockAccount;
+package org.izardon.usecase.stockaccount.query.getstockaccount;
 
 import org.izardon.entity.model.stockaccount.StockAccount;
 

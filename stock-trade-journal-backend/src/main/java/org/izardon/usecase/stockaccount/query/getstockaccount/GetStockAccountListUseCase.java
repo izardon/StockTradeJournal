@@ -1,10 +1,9 @@
-package org.izardon.usecase.stockaccount.query.getStockAccount;
+package org.izardon.usecase.stockaccount.query.getstockaccount;
 
 import org.izardon.entity.model.stockaccount.StockAccount;
 import org.izardon.usecase.stockaccount.StockAccountRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 public class GetStockAccountListUseCase {
     private StockAccountRepository stockAccountRepository;

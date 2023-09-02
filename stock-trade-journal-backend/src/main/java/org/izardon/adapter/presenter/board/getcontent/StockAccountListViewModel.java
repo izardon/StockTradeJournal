@@ -11,7 +11,7 @@ public class StockAccountListViewModel {
         this.stockAccountDtos = stockAccountDtos;
     }
 
-    public List<StockAccountDto> getStickyNoteDtos() {
+    public List<StockAccountDto> getStockAccountDtos() {
         return stockAccountDtos;
     }
 }
