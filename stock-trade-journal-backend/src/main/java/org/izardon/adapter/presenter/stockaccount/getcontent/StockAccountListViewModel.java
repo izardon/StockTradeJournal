@@ -1,4 +1,4 @@
-package org.izardon.adapter.presenter.board.getcontent;
+package org.izardon.adapter.presenter.stockaccount.getcontent;
 
 import org.izardon.usecase.stockaccount.StockAccountDto;
 

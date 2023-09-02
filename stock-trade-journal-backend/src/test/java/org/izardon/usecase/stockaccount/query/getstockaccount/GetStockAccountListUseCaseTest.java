@@ -1,6 +1,6 @@
 package org.izardon.usecase.stockaccount.query.getstockaccount;
 
-import org.izardon.adapter.presenter.board.getcontent.StockAccountListViewModel;
+import org.izardon.adapter.presenter.stockaccount.getcontent.StockAccountListViewModel;
 import org.izardon.adapter.stockaccount.StockAccountRepositoryInMemoryImpl;
 import org.izardon.entity.model.stockaccount.StockAccount;
 import org.izardon.usecase.JpaApplicationTest;

@@ -6,6 +6,7 @@ import org.izardon.usecase.stockaccount.create.CreateStockAccountUseCase;
 import org.izardon.usecase.stockaccount.query.getstockaccount.GetStockAccountListUseCase;
 import org.izardon.usecase.stockinfo.StockInfoRepository;
 import org.izardon.usecase.stockinfo.create.CreateStockInfoUseCase;
+import org.izardon.usecase.stockinfo.query.getstockinfo.GetStockInfoListUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,6 +21,11 @@ public class UseCaseInjection {
     @Bean(name="GetStockAccountListUseCase")
     public GetStockAccountListUseCase getStockAccountListUseCase() {
         return new GetStockAccountListUseCase(stockAccountRepository);
+    }
+
+    @Bean(name="GetStockInfoListUseCase")
+    public GetStockInfoListUseCase getStockInfoListUseCase() {
+        return new GetStockInfoListUseCase(stockInfoRepository);
     }
 
     @Bean(name="CreateStockAccountUseCase")

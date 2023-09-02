@@ -1,6 +1,6 @@
 package org.izardon.adapter.controller.rest.springboot.stockaccount.query.getStockAccount;
 
-import org.izardon.adapter.presenter.board.getcontent.StockAccountListViewModel;
+import org.izardon.adapter.presenter.stockaccount.getcontent.StockAccountListViewModel;
 import org.izardon.usecase.stockaccount.StockAccountDto;
 import org.izardon.usecase.stockaccount.StockAccountDtoMapper;
 import org.izardon.usecase.stockaccount.query.getstockaccount.GetStockAccountListOutput;
