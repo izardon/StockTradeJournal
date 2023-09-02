@@ -1,2 +1,6 @@
 /.idea/
 target/
+/stock-trade-journal-frontend/.vscode/
+/stock-trade-journal-frontend/.angular/
+/stock-trade-journal-frontend/node_modules/
+/stock-trade-journal-backend/stock-trade-journal-backend/src/main/resources/data/stockTradeJournal.mv.db
