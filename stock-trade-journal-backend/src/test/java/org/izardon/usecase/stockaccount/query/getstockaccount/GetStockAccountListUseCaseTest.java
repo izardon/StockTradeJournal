@@ -1,6 +1,5 @@
 package org.izardon.usecase.stockaccount.query.getstockaccount;
 
-import org.izardon.adapter.gateway.repository.springboot.stockaccount.StockAccountRepositoryPeer;
 import org.izardon.adapter.presenter.board.getcontent.StockAccountListViewModel;
 import org.izardon.adapter.stockaccount.StockAccountRepositoryInMemoryImpl;
 import org.izardon.entity.model.stockaccount.StockAccount;
@@ -11,7 +10,6 @@ import org.izardon.usecase.stockaccount.StockAccountRepository;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
