@@ -1,16 +1,16 @@
 package org.izardon.usecase.stockaccount;
 
 public class StockAccountDto {
-    private String stockAccountId;
+    private String id;
     private String name;
 
-    public StockAccountDto(String stockAccountId, String name) {
-        this.stockAccountId = stockAccountId;
+    public StockAccountDto(String id, String name) {
+        this.id = id;
         this.name = name;
     }
 
-    public String getStockAccountId() {
-        return stockAccountId;
+    public String getId() {
+        return id;
     }
 
     public String getName() {

@@ -1,12 +1,12 @@
 package org.izardon.application.springboot.web.config;
 
 import org.izardon.adapter.gateway.repository.springboot.stockaccount.StockAccountRepositoryPeer;
-import org.izardon.adapter.gateway.repository.springboot.stockinfo.StockInfoRepositoryPeer;
+import org.izardon.adapter.gateway.repository.springboot.accountstock.AccountStockRepositoryPeer;
 import org.izardon.adapter.stockaccount.StockAccountRepositoryImpl;
-import org.izardon.adapter.stockinfo.StockInfoRepositoryImpl;
+import org.izardon.adapter.accountstock.AccountStockRepositoryImpl;
 import org.izardon.model.DomainEventBus;
 import org.izardon.usecase.stockaccount.StockAccountRepository;
-import org.izardon.usecase.stockinfo.StockInfoRepository;
+import org.izardon.usecase.accountstock.AccountStockRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.PropertySource;
 @Configuration("StockTradeJournalRepositoryInjection")
 public class RepositoryInjection {
     private StockAccountRepositoryPeer stockAccountRepositoryPeer;
-    private StockInfoRepositoryPeer stockInfoRepositoryPeer;
+    private AccountStockRepositoryPeer accountStockRepositoryPeer;
 
     @Autowired
     public void setStockAccountRepositoryPeer(StockAccountRepositoryPeer stockAccountRepositoryPeer) {
@@ -24,8 +24,8 @@ public class RepositoryInjection {
     }
 
     @Autowired
-    public void setStockInfoRepositoryPeer(StockInfoRepositoryPeer stockInfoRepositoryPeer) {
-        this.stockInfoRepositoryPeer = stockInfoRepositoryPeer;
+    public void setAccountStockRepositoryPeer(AccountStockRepositoryPeer accountStockRepositoryPeer) {
+        this.accountStockRepositoryPeer = accountStockRepositoryPeer;
     }
 
     @Bean(name="stockAccountRepository")
@@ -33,9 +33,9 @@ public class RepositoryInjection {
         return new StockAccountRepositoryImpl(stockAccountRepositoryPeer);
     }
 
-    @Bean(name="stockInfoRepository")
-    public StockInfoRepository stockInfoRepository() {
-        return new StockInfoRepositoryImpl(stockInfoRepositoryPeer);
+    @Bean(name="accountStockRepository")
+    public AccountStockRepository accountStockRepository() {
+        return new AccountStockRepositoryImpl(accountStockRepositoryPeer);
     }
 
     @Bean(name="stockTradeJournalEventBus")

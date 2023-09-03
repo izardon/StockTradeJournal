@@ -1,0 +1,45 @@
+.drawer-container {
+  height: 100vh;
+}
+
+.drawer {
+  width: 280px;
+}
+
+.drawer-menu {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 280px;
+  max-width: 280px;
+  background-color: rgb(255, 255, 255);
+  padding: 6px 0;
+}
+
+.drawer-menu-item {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  user-select: none;
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+
+  font-family: 'Your-Preferred-Font', sans-serif; // 替換成你想要的字體
+  font-size: 20px; // 設定字體大小
+  font-weight: 600; // 設定字體粗細
+  color: #333; // 設定字體顏色
+}
+
+.drawer-menu-item:hover {
+  background-color: rgb(208, 208, 208);
+}
+
+.drawer-menu-item:active {
+  background-color: rgb(170, 170, 170);
+}

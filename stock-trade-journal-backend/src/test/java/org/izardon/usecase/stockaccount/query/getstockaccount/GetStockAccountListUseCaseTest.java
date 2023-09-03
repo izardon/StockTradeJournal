@@ -39,8 +39,8 @@ public class GetStockAccountListUseCaseTest {
         stockAccountDtoList = stockAccountDtoMapper.domainToDto(output.getStockAccounts());
         StockAccountListViewModel stockAccountListViewModel = new StockAccountListViewModel(stockAccountDtoList);
         // Assert
-        Assert.assertEquals("firstId", stockAccountListViewModel.getStockAccountDtos().get(0).getStockAccountId());
-        Assert.assertEquals("secondId", stockAccountListViewModel.getStockAccountDtos().get(1).getStockAccountId());
+        Assert.assertEquals("firstId", stockAccountListViewModel.getStockAccountDtos().get(0).getId());
+        Assert.assertEquals("secondId", stockAccountListViewModel.getStockAccountDtos().get(1).getId());
     }
 
     private void create_single_stock_account(StockAccountRepository stockAccountRepository) {

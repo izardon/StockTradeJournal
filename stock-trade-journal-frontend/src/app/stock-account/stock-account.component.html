@@ -1,5 +1,5 @@
 <div class="card-container">
-  <mat-card class="card" *ngFor="let account of accounts">
+  <mat-card class="card" *ngFor="let account of accounts" [routerLink]="['/account-stock', account.id]">
     <mat-card-header>
       <mat-card-title>{{ account.name }}</mat-card-title>
     </mat-card-header>

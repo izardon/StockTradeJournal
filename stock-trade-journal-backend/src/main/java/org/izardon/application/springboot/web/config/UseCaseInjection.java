@@ -4,9 +4,9 @@ import org.izardon.model.DomainEventBus;
 import org.izardon.usecase.stockaccount.StockAccountRepository;
 import org.izardon.usecase.stockaccount.create.CreateStockAccountUseCase;
 import org.izardon.usecase.stockaccount.query.getstockaccount.GetStockAccountListUseCase;
-import org.izardon.usecase.stockinfo.StockInfoRepository;
-import org.izardon.usecase.stockinfo.create.CreateStockInfoUseCase;
-import org.izardon.usecase.stockinfo.query.getstockinfo.GetStockInfoListUseCase;
+import org.izardon.usecase.accountstock.AccountStockRepository;
+import org.izardon.usecase.accountstock.create.CreateAccountStockUseCase;
+import org.izardon.usecase.accountstock.query.getaccountstock.GetAccountStockListUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration("StockTradeJournalUseCaseInjection")
 public class UseCaseInjection {
     private StockAccountRepository stockAccountRepository;
-    private StockInfoRepository stockInfoRepository;
+    private AccountStockRepository accountStockRepository;
 
     private DomainEventBus eventBus;
 
@@ -23,9 +23,9 @@ public class UseCaseInjection {
         return new GetStockAccountListUseCase(stockAccountRepository);
     }
 
-    @Bean(name="GetStockInfoListUseCase")
-    public GetStockInfoListUseCase getStockInfoListUseCase() {
-        return new GetStockInfoListUseCase(stockInfoRepository);
+    @Bean(name="GetAccountStockListUseCase")
+    public GetAccountStockListUseCase getAccountStockListUseCase() {
+        return new GetAccountStockListUseCase(accountStockRepository);
     }
 
     @Bean(name="CreateStockAccountUseCase")
@@ -33,9 +33,9 @@ public class UseCaseInjection {
         return new CreateStockAccountUseCase(stockAccountRepository);
     }
 
-    @Bean(name="CreateStockInfoUseCase")
-    public CreateStockInfoUseCase createStockInfoUseCase() {
-        return new CreateStockInfoUseCase(stockInfoRepository);
+    @Bean(name="CreateAccountStockUseCase")
+    public CreateAccountStockUseCase createAccountStockUseCase() {
+        return new CreateAccountStockUseCase(accountStockRepository);
     }
 
     @Autowired
@@ -44,7 +44,7 @@ public class UseCaseInjection {
     }
 
     @Autowired
-    public void setStockInfoRepository(StockInfoRepository stockInfoRepository) {
-        this.stockInfoRepository = stockInfoRepository;
+    public void setAccountStockRepository(AccountStockRepository accountStockRepository) {
+        this.accountStockRepository = accountStockRepository;
     }
 }

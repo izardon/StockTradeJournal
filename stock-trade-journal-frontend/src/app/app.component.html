@@ -1,5 +1,13 @@
-<div class="app-container">
-  <app-drawer></app-drawer>
-</div>
+<mat-drawer-container class="drawer-container">
+  <mat-drawer mode="side" opened="true" class="drawer">
+    <div class="drawer-menu">
+      <button class="drawer-menu-item" routerLink="/stock-account">股票管理</button>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
 
-<router-outlet></router-outlet>
+
+

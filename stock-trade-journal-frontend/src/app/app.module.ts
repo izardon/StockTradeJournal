@@ -3,18 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DrawerComponent } from './drawer/drawer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
-import { StockAccountComponent } from './stock-account/stock-account.component';
 import { HttpClientModule } from '@angular/common/http';
+// custom
+import { StockAccountComponent } from './stock-account/stock-account.component';
+import { AccountStockComponent } from './account-stock/account-stock.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DrawerComponent,
-    StockAccountComponent
+    StockAccountComponent,
+    AccountStockComponent
   ],
   imports: [
     BrowserModule,

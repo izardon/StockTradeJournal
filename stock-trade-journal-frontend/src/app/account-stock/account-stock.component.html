@@ -1,0 +1,11 @@
+<div class="card-container">
+    <mat-card class="card" *ngFor="let stocks of accountStocks">
+        <mat-card-header>
+            <mat-card-title>{{ stocks.code }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{ stocks.name }}</p>
+        </mat-card-content>
+    </mat-card>
+</div>
+  
